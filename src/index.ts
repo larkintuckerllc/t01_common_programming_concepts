@@ -55,4 +55,15 @@ console.log(`The value of a3 is: ${a3}`); // 2
 arr[3] = 3;
 console.log(`The fourth value of arr is: ${arr[3]}`); // 3
 
-// ASSIGNMENT
+// OBJECT OR REFERENCE
+const tup2: [number, string, number] = [0, 'a', 1.1]; // [number, string, number]
+const tup3 = tup2;
+tup2[0] = 1;
+console.log(`The first value of tup2 is ${tup2[0]}`); // 1
+console.log(`The first value of tup3 is ${tup3[0]}`); // 1
+
+const arr2 = [0, 1, 2]; // number[]
+const arr3 = arr2;
+arr2[0] = 1;
+console.log(`The first value of arr2 is ${arr2[0]}`); // 1
+console.log(`The first value of arr3 is ${arr3[0]}`); // 1
